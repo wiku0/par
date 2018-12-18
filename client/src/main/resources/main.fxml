@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox fx:id="comboBoxProtocol" layoutX="10.0" layoutY="10.0" onAction="#setProtocol" prefHeight="25.0" prefWidth="120.0" promptText="Protocol" styleClass="menu-bar" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="394.0" layoutY="10.0" prefHeight="25.0" prefWidth="452.0" styleClass="menu-bar" text="Currently protocol" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="textField" layoutX="30.0" layoutY="374.0" prefHeight="30.0" promptText="write message" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="75.0" />
+      <Button defaultButton="true" layoutX="534.0" layoutY="373.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="30.0" prefWidth="75.0" text="Send" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ScrollPane fx:id="scrollPane" prefWidth="600.0" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="25.0">
+         <content>
+            <TextFlow fx:id="textFlow" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

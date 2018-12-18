@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="63.0" layoutY="78.0" text="Podaj swój login:" />
+      <TextField fx:id="loginTextField" layoutX="63.0" layoutY="101.0" promptText="login" />
+      <Button defaultButton="true" layoutX="63.0" layoutY="150.0" mnemonicParsing="false" onAction="#loginButton" text="Zaloguj się" />
+      <Label prefHeight="25.0" prefWidth="115.0" styleClass="menu-bar" text="Currently protocol" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ComboBox fx:id="comboBoxProtocol" onAction="#setProtocol" prefHeight="25.0" promptText="Protocol" styleClass="menu-bar" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
